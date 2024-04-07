@@ -1,0 +1,212 @@
+
+.home-container a {
+    position: fixed;
+    top: 55px;
+    right: 70px;
+    z-index: 1000;
+    font-size: 40px;
+    color: #C33432;
+    transition: color 0.3s ease;
+}
+
+.home-container a:hover {
+    color: darkred;
+}
+
+.logo-container {
+    border: 2px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C33432;
+    position: absolute;
+    top: 43px;
+    margin-left: 60px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-layout{
+    flex-grow: 1;
+    max-width: 40%;
+    position: fixed;
+}
+.left-layout img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.right-layout {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    margin-top: 150px;
+    color: #C33432;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 100px;
+    flex-grow: 1;
+}
+
+.summary {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.order i {
+    margin-right: 30px;
+
+}
+
+.order-details {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order:last-child {
+    border-bottom: none;
+}
+
+
+.total {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: #C33432;
+    position: relative;
+}
+
+.order-number {
+    margin-bottom: 10px;
+}
+
+.order {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.order-price {
+    float: right;
+    margin-left: 150px;
+}
+
+/* CSS for radio buttons */
+.delivery-options input[type="radio"] {
+    display: none;
+}
+
+.delivery-options label {
+    margin-right: 15px;
+    padding: 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+/* CSS for checked radio buttons */
+.delivery-options input[type="radio"]:checked + label {
+    background-color: #C33432;
+    color: white;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 20px;
+    margin: 0px 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: darkgray;
+}
+
+.button-back {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-back button {
+    bottom: 20px;
+    right: 100px;
+}
+
+.button-back a {
+    margin-left: 10px;
+}
+
+#backButton{
+    background-color: #C33432;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#backButton:hover {
+    background-color: #9C2927;
+}

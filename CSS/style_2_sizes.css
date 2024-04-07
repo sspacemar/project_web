@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 55px;
+    padding: 25px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%; /* ความกว้างเท่ากับหน้าจอ */
+    padding: 10px 0;
+}
+
+.home-container a {
+    position: fixed;
+    top: 55px;
+    right: 70px;
+    z-index: 1000;
+    font-size: 40px;
+    color: #C33432;
+    transition: color 0.3s ease;
+}
+
+.home-container a:hover {
+    color: darkred;
+}
+
+.sizes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px; /* ระยะห่างระหว่างไอเท็ม */
+    max-width: 100%; /* กำหนดความกว้างสูงสุด */
+    overflow: auto; /* ให้มีการเลื่อน scroll เมื่อขนาดเกินขอบเขต */
+    padding: 120px 20px;
+}
+
+.sizes-item img {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 60px;
+}
+
+.sizes-item {
+    flex-grow: 1;
+    width: 18.5em;
+    height: 20em;
+    border-radius: 9%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: #f0f0f0;
+}
+.sizes-item:hover {
+    background-color: #C33432
+}
+
+
+
+.sizes-item::before {
+    content: "Size S (+3 Toopings)\A 29฿";
+    white-space: pre;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    padding: 10px;
+    border: 2px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 160px;
+    height: auto;
+}
+
+.sizes-item:nth-child(2):before {
+    content: "Size M (+5 Toopings)\A 39฿";
+}
+
+.sizes-item:nth-child(3):before {
+    content: "Size L (+6 Toopings)\A 49฿";
+}
+
+.sizes-item:nth-child(4):before {
+    content: "Size XL (+7 Toopings)\A 59฿";
+}
+
+.sizes-item i {
+    color: gray;
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+    border: 2px;
+    background-color: white;
+    border: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 256px;
+    margin-left: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.sizes-item.added-to-cart {
+    background-color: darkred;
+    color: white;
+
+}
+
+.sizes-item.added-to-cart:hover {
+    background-color: darkred; /* ค้างไว้ */
+    color: white; /* ค้างไว้ */
+}
+
+.button-back-next {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.button-back-next button {
+    margin-left: 0.5px;
+}
+
+.button-back button:hover {
+    background-color: #9C2927;
+}
+
+.button-back-next a {
+    margin-left: 10px;
+}
+
+#backButton, #nextButton {
+    background-color: #C33432;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#backButton:hover, #nextButton:hover {
+    background-color: #9C2927;
+}

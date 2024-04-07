@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style_2_sizes.css">
+    <link rel="icon" href="css/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Cup Sizes</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Sizes</h1>
+    </div>
+    <div class="home-container">
+        <a href="1_home_page.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
+
+    <div class="sizes-container">
+        <div class="sizes-item" data-price="29">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="image/IMG_6509.png" alt="Size S (+3 Toppings)">
+        </div>
+        <div class="sizes-item" data-price="39">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="image/IMG_6509.png" alt="Size M (+5 Toppings)">
+        </div>
+        <div class="sizes-item" data-price="49">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="image/IMG_6509.png" alt="Size L (+6 Toppings)">
+        </div>
+        <div class="sizes-item" data-price="59">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="image/IMG_6509.png" alt="Size XL (+7 Toppings)">
+
+        </div>
+    </div>
+
+
+    <div class="button-back-next">
+        <a href="1_home_page.html">
+            <button id="backButton">BACK</button>
+        </a>
+        <a href="3_flavors.html">
+            <button id="nextButton">NEXT</button>
+        </a>
+    </div>
+
+    <script>
+        let sizeSelected = false;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartIcons = document.querySelectorAll('.fa-cart-shopping');
+
+            cartIcons.forEach(icon => {
+                icon.addEventListener('click', function () {
+                    if (sizeSelected) {
+                        alert('You can only select one size per order.');
+                        return;
+                    }
+
+                    addToCart(icon);
+                    sizeSelected = true;
+                });
+            });
+        });
+
+        function addToCart(icon) {
+            const item = icon.closest('.sizes-item');
+            const itemName = item.querySelector('img').alt;
+            const itemPrice = item.getAttribute('data-price');
+
+            // เพิ่มสินค้าลงในตะกร้า
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.textContent = `${itemName} ${itemPrice}฿`;
+
+            const myCart = document.querySelector('.my-cart');
+            myCart.appendChild(cartItem);
+
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+
+</html>

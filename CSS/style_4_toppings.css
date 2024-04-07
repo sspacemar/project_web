@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    padding: 25px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.home-container a {
+    position: fixed;
+    top: 55px;
+    right: 70px;
+    z-index: 1000;
+    font-size: 40px;
+    color: #C33432;
+    transition: color 0.3s ease;
+}
+
+.home-container a:hover {
+    color: darkred;
+}
+
+.toppings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 270px;
+    padding-right: 270px;
+    margin-top: 27.25px;
+}
+
+.toppings-item {
+    width: calc(33.33% - 20px);
+    height: 20em;
+    border-radius: 9%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.toppings-item:hover {
+    background-color: #C33432
+}
+.toppings-container .toppings-item::before {
+    content: "Conflakes";
+    white-space: pre;
+    position: absolute;
+    bottom: 22px;
+    left: 15px;
+    padding: 10px;
+    border: 2px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 150px;
+    height: auto;
+}
+
+.toppings-container .toppings-item:nth-child(2):before {
+    content: "Almonds";
+}
+.toppings-container .toppings-item:nth-child(3):before {
+    content: "Granola";
+}
+.toppings-container .toppings-item:nth-child(4):before {
+    content: "Cookies";
+}
+.toppings-container .toppings-item:nth-child(5):before {
+    content: "Red Jelly";
+}
+.toppings-container .toppings-item:nth-child(6):before {
+    content: "Bubble";
+}
+.toppings-container .toppings-item:nth-child(7):before {
+    content: "Brown Sugar Konjac";
+}
+.toppings-container .toppings-item:nth-child(8):before {
+    content: "Marshmallow";
+}
+.toppings-container .toppings-item:nth-child(9):before {
+    content: "Oatmeal";
+}
+.toppings-container .toppings-item:nth-child(10):before {
+    content: "Cashew nut";
+}
+.toppings-container .toppings-item:nth-child(11):before {
+    content: "Raisin";
+}
+.toppings-container .toppings-item:nth-child(12):before {
+    content: "Pipo";
+}
+.toppings-container .toppings-item:nth-child(13):before {
+    content: "Cocoa Crunch";
+}
+.toppings-container .toppings-item:nth-child(14):before {
+    content: "Kyoho Grape Konjac \A (+10฿)";
+}
+.toppings-container .toppings-item:nth-child(15):before {
+    content: "Whipped Cream\A (+10฿)";
+}
+.toppings-container .toppings-item:nth-child(16):before {
+    content: "Kit Kat\A (+10฿)";
+}
+
+.toppings-container .toppings-item:nth-child(17):before {
+    content: "Strawberry";
+}
+
+.toppings-container .toppings-item:nth-child(18):before {
+    content: "Banana";
+}
+.toppings-container .toppings-item:nth-child(19):before {
+    content: "Kiwi";
+}
+.toppings-container .toppings-item:nth-child(20):before {
+    content: "Blueberry";
+}
+.toppings-container .toppings-item:nth-child(21):before {
+    content: "Mulberry";
+}
+.toppings-container .toppings-item:nth-child(22):before {
+    content: "Mango";
+}
+.toppings-container .toppings-item:nth-child(23):before {
+    content: "Avocado";
+}
+.toppings-container .toppings-item:nth-child(24):before {
+    content: "Grape";
+}
+.toppings-container .toppings-item:nth-child(25):before {
+    content: "Orange";
+}
+.toppings-container .toppings-item:nth-child(26):before {
+    content: "Lychee";
+}
+.toppings-container .toppings-item:nth-child(27):before {
+    content: "Apple";
+}
+
+.toppings-item i {
+    color: gray;
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+    border: 2px;
+    background-color: white;
+    border: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 256px;
+    margin-left: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.toppings-item img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 45px;
+}
+
+/* ส่วนของปุ่ม back,next */
+.button-back-next {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.button-back-next button {
+    bottom: 20px;
+    right: 100px;
+}
+
+.button-back-next a {
+    margin-left: 10px;
+}
+
+#backButton, #nextButton {
+    background-color: #C33432;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#backButton:hover, #nextButton:hover {
+    background-color: #9C2927;
+}
