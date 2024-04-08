@@ -146,6 +146,17 @@ h1 {
     cursor: pointer;
 }
 
+.sauces-item.added-to-cart {
+    background-color: #C33432;
+    color: black;
+
+}
+
+.sauces-item.added-to-cart:hover {
+    background-color: #C33432;
+    color: black;
+}
+
 .button-back-next {
     position: fixed;
     bottom: 20px;

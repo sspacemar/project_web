@@ -133,7 +133,6 @@ h1 {
     margin-left: 150px;
 }
 
-/* CSS for radio buttons */
 .delivery-options input[type="radio"] {
     display: none;
 }
@@ -145,7 +144,6 @@ h1 {
     border-radius: 30px;
 }
 
-/* CSS for checked radio buttons */
 .delivery-options input[type="radio"]:checked + label {
     background-color: #C33432;
     color: white;
@@ -170,7 +168,7 @@ h1 {
     color: #fff;
     cursor: pointer;
     font-size: 16px;
-    width: 150px;
+    width: 170px;
     transition: background-color 0.3s ease;
 }
 .button:hover {

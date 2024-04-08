@@ -123,14 +123,14 @@ h1 {
 }
 
 .sizes-item.added-to-cart {
-    background-color: darkred;
-    color: white;
+    background-color: #C33432;
+    color: black;
 
 }
 
 .sizes-item.added-to-cart:hover {
-    background-color: darkred; /* ค้างไว้ */
-    color: white; /* ค้างไว้ */
+    background-color: #C33432;
+    color: black;
 }
 
 .button-back-next {

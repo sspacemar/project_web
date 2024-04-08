@@ -188,6 +188,17 @@ header {
     margin-bottom: 45px;
 }
 
+.toppings-item.added-to-cart {
+    background-color: #C33432;
+    color: black;
+
+}
+
+.toppings-item.added-to-cart:hover {
+    background-color: #C33432;
+    color: black;
+}
+
 /* ส่วนของปุ่ม back,next */
 .button-back-next {
     position: fixed;

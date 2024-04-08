@@ -151,6 +151,17 @@ header {
     cursor: pointer;
 }
 
+.flavors-item.added-to-cart {
+    background-color: #C33432;
+    color: black;
+
+}
+
+.flavors-item.added-to-cart:hover {
+    background-color: #C33432;
+    color: black;
+}
+
 .button-back-next {
     position: fixed;
     bottom: 20px;
